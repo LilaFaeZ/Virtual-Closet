@@ -9,16 +9,16 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       crossorigin="anonymous"
     />
-
     <title>{% block title %}Home{% endblock %}</title> <!--Home is title --> 
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light"> <!-- part of boot strap website-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- part of boot strap website-->
       <button
         class="navbar-toggler"
         type="button"
@@ -31,6 +31,8 @@
         <div class="navbar-nav">
           {% if user.is_authenticated %}
           <a class="nav-item nav-link" id="home" href="/">Home</a>
+          <a class="nav-item nav-link" id="seasonal" href="/seasonal">Seasonal</a>
+          <a class="nav-item nav-link" id="add_items" href="/add_items">Add Items</a>
           <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
           {% else %}
           <a class="nav-item nav-link" id="login" href="/login">Login</a>
@@ -43,7 +45,7 @@
     {% with messages = get_flashed_messages(with_categories=true) %} {% if
     messages %} {% for category, message in messages %} {% if category ==
     'error' %}
-    <div class="alert alert-light alter-dismissable fade show" role="alert">
+    <div class="alert alert-danger alter-dismissable fade show" role="alert">
       {{ message }}
       <button type="button" class="close" data-dismiss="alert">
         <span aria-hidden="true">&times;</span>

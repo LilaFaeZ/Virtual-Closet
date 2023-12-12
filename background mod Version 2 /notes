@@ -1,0 +1,12 @@
+
+(IN relation to __init__.py) will make the website folder a python package (using packaged 
+parts of it)
+
+Pip = package install for python
+Flask is for python to make website creation easier
+- flask-login is to login users
+- flask-sqlalchemy data base for sql 
+
+"the reason we can do this is because website is a python package, so whenever you put 
+this init.py file inside of a folder it becomes a python package which means when u input 
+the name of the folder it will by default run all of the stuff in the init .py file 

@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block title %}Add Items{% endblock %} {% block content
+    %}
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  <style>
+    body {
+      background-image: url("../static/pink_hanger.jpg")
+    }
+  </style>
+
+    <h1 align="center">Your Closet</h1>
+    <ul class="list-group list-group-flush" id="notes">
+      {% for note in user.notes %}
+      <li class="list-group-item">
+        {{ note.data }}
+        <!--<button type="button" class="close" onClick="deleteNote({{ note.id }})">
+          <span aria-hidden="true">&times;</span>
+        </button>-->
+      </li>
+      {% endfor %}
+{% endblock %}

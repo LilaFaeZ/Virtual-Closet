@@ -10,7 +10,3 @@ Flask is for python to make website creation easier
 "the reason we can do this is because website is a python package, so whenever you put 
 this init.py file inside of a folder it becomes a python package which means when u input 
 the name of the folder it will by default run all of the stuff in the init .py file 
-
-SQLAlchemy-ImageAttach is an open source software written by Hong Minhee. The source code is distributed under MIT license, and you can find it at GitHub repository:
-
-flash a note of saying "successfully added"

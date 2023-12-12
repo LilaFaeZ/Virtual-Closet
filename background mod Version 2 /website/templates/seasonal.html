@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+    %}
+
+    <div class="seasonal">
+        <label for="seasons">Does this item best fit Winter?</label>
+        <input type="checkbox" name="winter" id="winter" />
+      </div>
+      
+      <div class="seasonal">
+        <label for="seasons">Does this item best fit Spring?</label>
+        <input type="checkbox" name="spring" id="spring" />
+      </div>
+
+      <div class="seasonal">
+        <label for="seasons">Does this item best fit Summer?</label>
+        <input type="checkbox" name="summer" id="summer" />
+      </div>
+
+      <div class="seasonal">
+        <label for="seasons">Does this item best fit Fall/Autumn?</label>
+        <input type="checkbox" name="fall" id="fall" />
+      </div>
+    {% endblock %}
